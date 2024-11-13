@@ -106,7 +106,6 @@ aside.fallout {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: url("/images/explosion.gif"); /* https://giphy.com/explore/nuclear-bomb-explosion */
   background-size: cover;
   background-position: center;
   animation: explosion 4s ease forwards;
