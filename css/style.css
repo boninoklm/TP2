@@ -1,0 +1,383 @@
+
+/* All
+---------------------------------------------------------------------------------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.corp { 
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: black;
+  padding: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.lien {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.lien:hover {
+  color: rgb(66, 75, 255);
+}
+
+main {
+  grid-area: main;
+  padding-left: 20px;
+}
+
+figure {
+  float: left;
+  border: 1px solid black;
+  padding: 10px;
+  max-width: 350px;
+  max-height: 250px;
+  position: relative;
+}
+
+.image {
+  margin: auto;
+  max-width: 350px;
+  border-radius: 5px;
+}
+
+aside {
+  grid-area: aside;
+  padding-left: 10px;
+}
+
+footer {
+  display: flex;
+  grid-area: footer;
+  background-color: gray;
+  height: 50px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* Fallout
+---------------------------------------------------------------------------------------- */
+
+.ff {
+  font-family: Impact, Haettenschweiler, sans-serif;
+}
+
+figure.fallout:hover {
+  transform: scale(1.03);
+  border: 3px solid darkcyan;
+}
+
+.fallout {
+  animation: tete-f 6s;
+}
+
+@keyframes tete-f {
+  from {
+    background-color: black;
+  }
+
+  to {
+    background-color: darkgoldenrod;
+  }
+}
+
+aside.fallout {
+  background-color: darkcyan;
+}
+
+#explosion {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/explosion.gif"); /* https://giphy.com/explore/nuclear-bomb-explosion */
+  background-size: cover;
+  background-position: center;
+  animation: explosion 4s ease forwards;
+  z-index: 10;
+}
+
+@keyframes explosion {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#oups {
+  text-decoration: none;
+  color: red;
+}
+
+
+/* Wow
+------------------------------------------------------------------------------------------------ */
+
+
+aside.wow {
+  background-color: burlywood;
+}
+
+.wow {
+  animation: tete-w 5s;
+}
+
+.apparition {
+   position: relative;
+  animation: arthas 5s;
+}
+
+@keyframes arthas {
+  0% {
+    background-color: black;
+    color: white;
+    left: 1900px;
+  }
+
+  100% {
+    background-color: rgb(6, 6, 70);
+    color: aqua;
+    left: 0px;
+  }
+}
+
+@keyframes tete-w {
+  from {
+    background-color: black;
+    color: white;
+  }
+
+  to {
+    background-color: rgb(6, 6, 70);
+    color: aqua;
+  }
+}
+
+figure.wow:hover {
+  transform: scale(1.05);
+  border: 2px solid rgb(6, 6, 70);
+  position: relative;
+}
+
+
+
+/* KB2
+------------------------------------------------------------------------------------------------ */
+
+
+#back {
+  background-image: linear-gradient(to bottom, lemonchiffon, black,  chocolate);
+}
+
+#titre {
+  text-align: center;
+  animation: titre 6s infinite;
+}
+
+@keyframes titre {
+  0% {
+    color: black;
+  }
+
+  40% {
+    color: mediumaquamarine;
+  }
+
+  80% {
+    color: orange;
+  }
+
+  100% {
+    color: black;
+  }
+}
+
+.gallerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  margin: 30px;
+  padding: 20px;
+  height: 250px;
+  width: 500px;
+  border: 2px solid darkgray;
+  float: left;
+  border-radius: 5px;
+  color: beige;
+}
+
+.box:hover {
+  border: 2px solid brown;
+}
+
+
+.effet1 {
+  max-width: 250px;
+  animation: zoom 2s infinite;
+  margin-left: 125px;
+}
+
+@keyframes zoom {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+.effet2 {
+  max-width: 250px;
+  margin-left: 125px;
+  border-radius: 5px;
+  animation: opacité 2s infinite;
+}
+
+@keyframes opacité {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.05;
+  }
+}
+
+.effet3 {
+  max-width: 250px;
+  animation: bouge 2s infinite;
+  position: relative;
+  border-radius: 5px;
+  margin-left: 25px;
+}
+
+@keyframes bouge {
+  0% {
+    left: 0px;
+  }
+
+  50% {
+    left: 200px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.effet4 {
+  animation: backgroundd 6s infinite;
+}
+
+@keyframes backgroundd {
+  0% {
+    background-color: black;
+  }
+
+  40% {
+    background-color: mediumaquamarine;
+  }
+
+  80% {
+    background-color: orange;
+  }
+
+  100% {
+    background-color: black;
+  }
+}
+
+.effet5 {
+  margin-left: 125px;
+  max-width: 200px;
+  border-radius: 5px;
+  animation: jumpscare 0.5s forwards;
+  animation-delay: 20s;
+  position: relative;
+  opacity: 0;
+  z-index: 10;
+}
+
+@keyframes jumpscare {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  99% {
+    opacity: 1;
+    transform: scale(10);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.effet6 {
+  max-width: 250px;
+  animation: bouge 2s infinite alternate;
+  position: relative;
+  border-radius: 5px;
+  margin-left: 25px;
+}
+
+@keyframes bouge2 {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 200px;
+  }
+}
+
+
+/* index */
+
+
+.boite {
+  margin: 30px;
+  height: 100px;
+  width: 200px;
+  border: 2px solid black;
+  float: left;
+  border-radius: 5px;
+}
+
+.boite:hover {
+ background-color:cornflowerblue;
+}
+.page {
+text-align: center;
+color: black;
+}

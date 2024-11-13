@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KB2</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="back">
+  <header>
+    <nav class="gauche">
+      <a href="http://167.114.152.54/~darquest1/prod/" target="_blank" class="lien">Le Darquest</a>
+      <a href="wow.html" class="lien">Wow</a>
+      <a href="fallout.html" class="lien">Fallout</a>
+      <a href="http://167.114.152.54/~knapsak3/" target="_blank" class="lien">Knapsak</a>
+    </nav>
+    <nav class="droite">
+      <a href="https://clg.qc.ca/" class="lien" target="_blank">Mon Cégep</a>
+      <a href="KB2.html" class="lien">KB2</a>
+      <a href="https://boninoklm.github.io/TP-1/" target="_blank" class="lien">Mon Tp1</a>
+    </nav>
+  </header>
+  <h1 id="titre">Animation</h1>
+  <div class="gallerie">
+    
+    <div class="box">@keyframes est une règle CSS qui permet de définir une animation.
+      Elle spécifie les étapes de l'animation en définissant les transformations que l'élément doit subir à chaque
+      étape.
+      Voici un exemple où l'image effectue un zoom avant et arrière en utilisant @keyframes.
+      <hr><br><br>
+      <img class="effet1" src="images/wrld.avif" alt="https://us.shop.battle.net/en-us/family/world-of-warcraft">
+    </div>
+
+    <div class="box">Avec @keyframes on peut créer un un effet de clignotement.
+      L'élément a une animation d'opacité qui se répète indéfiniment toutes les 2 secondes.
+      L'opacité descend, ce qui rend l'élément presque transparent avant qu'il ne revienne à son opacité d'origine.
+      <hr><br><img class="effet2" src="images/cool.webp" alt="https://news.blizzard.com/en-us/world-of-warcraft/24136212/celebrate-world-of-warcraft-during-the-20th-anniversary">
+    </div>
+
+    <div class="box">Avec @keyframes on peut créer un effet de déplacement.
+      L'élément a une animation qui se répète indéfiniment.
+      Cette animation déplace l'élément horizontalement puis il revient à sa position initiale.
+      La position relative permet ce mouvement sans affecter les autres éléments autour de lui.
+      <hr><br><img class="effet3" src="images/pfallout.jpg" alt="https://www.xbox.com/fr-CA/games/store/fallout-4-game-of-the-year-edition/C24SVX28PNWM">
+    </div>
+
+    <div class="box effet4">Avec @keyframes on peut créer un effet de changement de couleur de fond et de texte.
+      Ici, l'animation de fond se répète comme elle du titre de la page.
+      Elle commence avec une couleur de fond noire, passe ensuite à une teinte aquamarine, puis orange
+      pour finalement revenir au noir à la fin du cycle.
+      Cette animation crée une transition douce entre les couleurs, donnant un effet dynamique et visuel au fond de
+      l'élément.
+    </div>
+
+    <div class="box">Si vous êtes resté plus de 20 secondes sur la page, vous avez eu l’effet. Avec l’élément délai,
+      l’animation est activée après un certain temps. Après ce délai, l'élément devien visible et en seulement 0,5
+      seconde il passe à une échelle de 10. Ensuite, l'image reste affichée indéfiniment grâce à l’élément forwards.
+      Ce délai rend l'effet inattendu ;)
+      <br><br><img class="effet5" src="images/monstre.webp"
+        alt="https://decider.com/2024/04/12/fallouts-most-terrifying-sequence-episode-3/">
+    </div>
+
+    <div class="box">Ici nous avons le même effet de mouvement que l'autre, mais en utilisant l'élément alternate. Cette
+      fois si le @keyframes ne revien pas à sa position de départ à la fin, donc en utilisant l'élément alternate,
+      l'animation est réactivé a l'envers une fois qu'il est a la position final.
+      <hr><br><img class="effet6" src="images/pfallout.jpg" alt="https://www.xbox.com/fr-CA/games/store/fallout-4-game-of-the-year-edition/C24SVX28PNWM">
+    </div>
+  </div>
+</body>
+
+</html>
